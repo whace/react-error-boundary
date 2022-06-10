@@ -16,7 +16,7 @@ const FallbackExample = () => {
   };
 
   return (
-    <ErrorBoundary fallback={<div>错误了</div>} onError={onError} >
+    <ErrorBoundary fallback={<div>错误了</div>} onError={onError} onReset={onReset}>
       {!hasError ? <MakeError /> : null}
     </ErrorBoundary>
   );
